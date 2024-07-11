@@ -21,6 +21,11 @@ public class UserController {
     public String index() {
         return "index";
     }
+    @GetMapping("/i")
+    public String i() {
+        return "index";
+    }
+
 
     @PostMapping("/register")
     @ResponseBody
