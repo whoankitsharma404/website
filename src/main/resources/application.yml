@@ -1,0 +1,20 @@
+spring:
+  security:
+    user:
+      name: user
+      password: password
+  application:
+    name: website
+  datasource:
+    url: jdbc:postgresql://localhost:5432/website_db
+    username: postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9999
